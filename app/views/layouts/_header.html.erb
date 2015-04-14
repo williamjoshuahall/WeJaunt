@@ -1,0 +1,12 @@
+<header class="navbar navbar-fixed-top navbar-inverse">
+  <div class="container">
+    <%= link_to "WeJaunt", root_path, id: "logo" %>
+    <nav>
+      <ul class="nav navbar-nav navbar-right">
+        <li><%= link_to "Home",   root_path %></li>
+        <li><%= link_to "Jaunts",   jaunts_path %></li>
+        <li><button type="button" class="btn btn-default navbar-btn"><%= link_to "Log in", '#' %></button></li>
+      </ul>
+    </nav>
+  </div>
+</header>
