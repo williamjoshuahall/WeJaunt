@@ -2,6 +2,18 @@
 <html>
 <head>
   <title>Wejaunt</title>
+  <title><%= yield(:title) %> | WeJaunt Marketplace</title>
+  		<meta charset="utf-8">
+		<meta name="description" content="<%= yield(:description) %>" />
+		<meta http-equiv="author" content="William Hall" />
+		<meta http-equiv="Sun. 03 Apr 2016 23:59:59 GMT" />
+		<meta property="og:site_name" content="WeJaunt" />
+		<meta property="og:type" content="Website" />
+		<meta property="og:locale" content="en_GB" />
+		<meta property="og:image" content="<%= yield(:image) %>" />
+		<meta property="og:description" content="<%= yield(:description) %>"/>
+		<link rel="shortcut icon" href="" />
+
   <%= stylesheet_link_tag    'application', media: 'all', 'data-turbolinks-track' => true %>
   <%= javascript_include_tag 'application', 'data-turbolinks-track' => true %>
   <%= csrf_meta_tags %>
